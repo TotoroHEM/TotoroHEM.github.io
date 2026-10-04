@@ -1,8 +1,11 @@
-@media screen and (max-width:120px) {
-    #desctop-nav{
+@media screen and (max-width: 800px) {
+    #desktop-nav {
         display: none;
     }
-    #hamburger-nav{
+    #hamburger-nav {
         display: flex;
-        }
+        justify-content: space-around;
+        align-items: center;
+        height: 17vh;
+    }
 }

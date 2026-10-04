@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="mediaqueries.css">
-
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <nav id="desktop-nav">
@@ -14,29 +13,219 @@
     <div>
         <ul class = "nav-links">
             <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
     </nav>
     <nav id ="hamburger-nav">
         <div class="logo">Rivujoya Hem</div>
-           <div class = "hamburger-menu">
-            <div class ="hamburger-icon" onclick="toggleMenu()"> 
-            <span></span> 
-            <span></span>
-            <span></span>
+        <div class = "hamburger-menu">
+            <div class ="hamburger-icon" id="hamburgerIcon"> 
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class= "menu-links">
-                <li><a href="#about"onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience"onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
-                        <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
-            </div>
-        
-           </div>
+            <ul class= "menu-links" id="menuLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+    <section id="profile">
+        <div class="scene-nature" aria-hidden="true">
+            <div class="sun"></div>
+            <div class="nature-cloud cloud-1"></div>
+            <div class="nature-cloud cloud-2"></div>
+            <div class="nature-cloud cloud-3"></div>
+            <div class="nature-cloud cloud-4"></div>
+            <div class="nature-hill hill-1"></div>
+            <div class="nature-hill hill-2"></div>
+            <div class="nature-leaf leaf-1"></div>
+            <div class="nature-leaf leaf-2"></div>
+            <div class="nature-leaf leaf-3"></div>
+            <div class="nature-tree tree-1"></div>
+            <div class="nature-tree tree-2"></div>
+            <div class="nature-tree tree-3"></div>
+            <div class="nature-grass"></div>
+            <div class="wind-line wind-1"></div>
+            <div class="wind-line wind-2"></div>
+        </div>
+        <div class="profile-scene">
+            <div class="section-pic-container">
+                <img src="rivu.png" alt="Rivujoya profile picture" />   
+            </div>
+            <div class="section-text-container">
+                <h1>Rivujoya Hem</h1>
+                <p>Hi, I am Rivujoya Hem — a Computer Science and Mathematics graduate passionate about building impactful technology, solving real-world problems, and creating meaningful user experiences through code and design. Explore my projects and feel free to reach out!</p>
+                <div class="btn-container">
+                    <a href="Resume_Rivujoya_Hem.pdf" target="_blank" rel="noopener">View Resume</a>
+                </div>
+                <button class="contact-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact Me</button>
+                <div id="socials-container">
+                    <img src="linkedin.png" alt="LinkedIn icon" class="social-icon" onclick="window.open('https://www.linkedin.com/in/rivujoya-hem-45aab9277/', '_blank')">
+                    <img src="github.png" alt="GitHub icon" class="social-icon" onclick="window.open('https://github.com/TotoroHem', '_blank')">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science and Mathematics graduate with a strong foundation in both fields. My passion lies in creating impactful technology solutions that address real-world challenges. I enjoy the process of designing and implementing user-centered applications that make a difference.</p>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="about.png" alt="About me image" />
+            </div>
+            <div class="section-text-container">
+                <div class="education-card">
+                    <img src="education.png" alt="Education icon" />
+                    <div>
+                        <h3>Bachelor of Science in Computer Science and Mathematics</h3>
+                        <p>GPA: 3.8/4.0</p>
+                        <p>Summa Cum Laude • Dean’s List</p>
+                    </div>
+                </div>
+
+                <div class="post-degree-courses">
+                    <h3>Post-Degree Classes</h3>
+                    <div class="course-scroll-menu" aria-label="Classes taken after graduation">
+                        <div class="course-marquee-track">
+                            <span class="course-pill">HTML & CSS</span>
+                            <span class="course-pill">JavaScript</span>
+                            <span class="course-pill">React</span>
+                            <span class="course-pill">Python</span>
+                            <span class="course-pill">Data Structures</span>
+                            <span class="course-pill">Databases</span>
+                            <span class="course-pill">Algorithms</span>
+                            <span class="course-pill">Web Development</span>
+                            <span class="course-pill">HTML & CSS</span>
+                            <span class="course-pill">JavaScript</span>
+                            <span class="course-pill">React</span>
+                            <span class="course-pill">Python</span>
+                            <span class="course-pill">Data Structures</span>
+                            <span class="course-pill">Databases</span>
+                            <span class="course-pill">Algorithms</span>
+                            <span class="course-pill">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="experience-header">
+            <p class="section-kicker">Career Journey</p>
+            <h2>Work Experience</h2>
+        </div>
+
+        <div class="experience-grid">
+            <article class="experience-card featured-card">
+                <div class="experience-topbar">
+                    <span class="experience-date">Aug 2025 — Present</span>
+                </div>
+                <h3>Technology and Robotics Instructor</h3>
+                <p class="experience-company">St. Edmund’s Prep School</p>
+                <ul>
+                    <li>Created and led a STEM and robotics program that engaged K–8 students through hands-on learning and project-based problem solving.</li>
+                </ul>
+            </article>
+
+            <article class="experience-card">
+                <div class="experience-topbar">
+                    <span class="experience-date">May 2023 — Aug 2023</span>
+                </div>
+                <h3>Undergraduate Researcher</h3>
+                <p class="experience-company">St. Joseph’s University</p>
+                <ul>
+                    <li>Analyzed behavioral data using R to uncover patterns in student habits and present findings to the academic community.</li>
+                </ul>
+            </article>
+
+            <article class="experience-card">
+                <div class="experience-topbar">
+                    <span class="experience-date">Sept 2023 — May 2025</span>
+                </div>
+                <h3>Peer Tutor - Mathematics and Computer Science</h3>
+                <p class="experience-company">St. Joseph’s University</p>
+                <ul>
+                    <li>Provided personalized academic support to students in mathematics and computer science, helping improve understanding and performance.</li>
+                </ul>
+            </article>
+
+            <article class="experience-card">
+                <div class="experience-topbar">
+                    <span class="experience-date">Jan 2023 — May 2025</span>
+                </div>
+                <h3>Admission Representative</h3>
+                <p class="experience-company">St. Joseph’s University</p>
+                <ul>
+                    <li>Guided prospective students and families through the admissions process while organizing materials and maintaining accurate records.</li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="leadership-box">
+            <p class="section-kicker">Leadership</p>
+            <h3>Founder and President of Girls Who Code (college loop)</h3>
+            <ul>
+                <li>Led STEM workshops and outreach initiatives that encouraged young women to pursue math and computer science.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="awards" class="awards-section">
+        <div class="awards-wrapper">
+            <div class="awards-title-row">
+                <span class="awards-icon" aria-hidden="true">🎓</span>
+                <div>
+                    <p class="section-kicker">Achievements</p>
+                    <h2>Awards & Achievements</h2>
+                </div>
+            </div>
+            <ul class="awards-list">
+                <li>Research Presenter, OurCS Conference – Carnegie Mellon University (Oct 2024)</li>
+                <li>Grace Hopper Celebration Scholar (2023)</li>
+                <li>PyData Diversity Scholarship Recipient (2023)</li>
+                <li>Delta Epsilon Sigma, SJNY</li>
+                <li>🎓 Graduated with a B.S. in Computer Science and Mathematics</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="projects-header">
+            <p class="section-kicker">Featured Work</p>
+            <h2>Projects</h2>
+        </div>
+        <div id="github-projects" class="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-wrapper">
+            <p class="section-kicker">Contact</p>
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://github.com/TotoroHEM" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/rivujoya-hem-45aab9277/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+            <p class="contact-message">
+                I hope you enjoyed exploring my work and getting to know me better. I am always eager to take on new challenges, collaborate on exciting projects, and continue my growth in the ever-evolving world of Computer Science.
+            </p>
+            <p class="contact-message">
+                If you have any inquiries, opportunities, or simply want to connect, I would love to hear from you. Let’s create something amazing together.
+            </p>
+            <div class="contact-details">
+                <p>Email: hemrivu@gmail.com</p>
+                <p>New York, USA</p>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
+    <script src="projects.js"></script>
 </body>
 </html>
